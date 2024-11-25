@@ -26,8 +26,11 @@ const {
   details: {author} 
 } = audioPlayer
 
-console.log('Song: ', song);
-console.log('Duration: ', duration);
-console.log('Author: ', author);
+// console.log('Song: ', song);
+// console.log('Duration: ', duration);
+// console.log('Author: ', author);
 
-console.log(song)
+// console.log(song)
+
+const [p1,p2,trunks]: string[] = ['Goku', 'Vegeta', 'Trunks', 'Piccolo', 'Krillin', 'Yamcha', 'Tien', 'Chiaotzu']
+console.log(trunks)
