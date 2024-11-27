@@ -4,9 +4,12 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "ng build",
+    "build": "ng build --base-href ./",
+    "build:github": "npm run delete:docs && npm run build && npm run copy:docs",
     "watch": "ng build --watch --configuration development",
-    "test": "ng test"
+    "test": "ng test",
+    "delete:docs": "if exist ..\\docs rmdir /s /q ..\\docs",
+    "copy:docs": "xcopy /s /y dist\\bases\\browser\\ ..\\docs\\"
   },
   "private": true,
   "dependencies": {
