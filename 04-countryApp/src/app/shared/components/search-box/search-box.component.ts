@@ -13,6 +13,10 @@ export class SearchBoxComponent implements OnInit, OnDestroy {
   private debouncer: Subject<string> = new Subject();
   private debouncerSubscription?: Subscription;
 
+
+  @Input()
+  public initialValue: string = '';
+
   @Input()
   public placeholder: string = '';
 
