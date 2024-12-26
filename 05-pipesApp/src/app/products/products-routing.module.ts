@@ -18,6 +18,10 @@ const routes: Routes = [
     component: UncommonPageComponent
   },
   {
+    path: 'custom',
+    component: UncommonPageComponent
+  },
+  {
     path: '**',
     redirectTo: ''
   }
